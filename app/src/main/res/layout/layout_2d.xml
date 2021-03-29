@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:textAlignment="center">
+
+    <View
+        android:id="@+id/view10"
+        android:layout_width="373dp"
+        android:layout_height="693dp"
+        android:background="@drawable/mainbg2d"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="247dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="36dp"
+        android:autoText="false"
+        android:text="Include special symbol"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textView30"
+        app:layout_constraintTop_toBottomOf="@+id/textView30" />
+
+    <CheckBox
+        android:id="@+id/specialSymbol"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="@drawable/custom_checkbox"
+        android:button="@drawable/custom_checkbox"
+        app:layout_constraintBottom_toBottomOf="@+id/textView31"
+        app:layout_constraintEnd_toEndOf="@+id/number"
+        app:layout_constraintTop_toTopOf="@+id/textView31" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="247dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="36dp"
+        android:autoText="false"
+        android:text="Include number"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textView29"
+        app:layout_constraintTop_toBottomOf="@+id/textView29" />
+
+    <CheckBox
+        android:id="@+id/number"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="@drawable/custom_checkbox"
+        android:button="@drawable/custom_checkbox"
+        app:layout_constraintBottom_toBottomOf="@+id/textView30"
+        app:layout_constraintEnd_toEndOf="@+id/upcase"
+        app:layout_constraintTop_toTopOf="@+id/textView30" />
+
+    <CheckBox
+        android:id="@+id/upcase"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="@drawable/custom_checkbox"
+        android:button="@drawable/custom_checkbox"
+        app:layout_constraintBottom_toBottomOf="@+id/textView29"
+        app:layout_constraintEnd_toEndOf="@+id/lowcase"
+        app:layout_constraintTop_toTopOf="@+id/textView29" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="247dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="36dp"
+        android:autoText="false"
+        android:text="Include upcase letters"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textView27"
+        app:layout_constraintTop_toBottomOf="@+id/textView27" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="212dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="40dp"
+        android:autoText="false"
+        android:text="PASSWORD GENERATOR"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/view10"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/view10"
+        app:layout_constraintTop_toTopOf="@+id/view10" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="223dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="76dp"
+        android:autoText="false"
+        android:text="Password length"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/password"
+        app:layout_constraintTop_toBottomOf="@+id/password" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="247dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="36dp"
+        android:autoText="false"
+        android:text="Include lower case letters"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textView26"
+        app:layout_constraintTop_toBottomOf="@+id/textView26" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="12dp"
+        android:background="#151537"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/view10"
+        app:layout_constraintStart_toStartOf="@+id/view10"
+        app:layout_constraintTop_toBottomOf="@+id/textView25" />
+
+    <EditText
+        android:id="@+id/length"
+        android:layout_width="118dp"
+        android:layout_height="33dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/textView26"
+        app:layout_constraintEnd_toEndOf="@+id/password"
+        app:layout_constraintTop_toTopOf="@+id/textView26" />
+
+    <CheckBox
+        android:id="@+id/lowcase"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="@drawable/custom_checkbox"
+        android:button="@drawable/custom_checkbox"
+        app:layout_constraintBottom_toBottomOf="@+id/textView27"
+        app:layout_constraintEnd_toEndOf="@+id/length"
+        app:layout_constraintTop_toTopOf="@+id/textView27" />
+
+    <Button
+        android:id="@+id/btnGenerate"
+        android:layout_width="0dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="36dp"
+        android:background="#3B3B98"
+        android:text="GENERATE PASSWORD "
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/view10"
+        app:layout_constraintEnd_toEndOf="@+id/view10"
+        app:layout_constraintStart_toStartOf="@+id/view10" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
